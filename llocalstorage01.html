@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Nayak</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(44, 44, 57);
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            color: rgb(139, 177, 201);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 60px;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            color: rgb(139, 177, 201);
+            /* border: 0.5px solid; */
+            /* align-items: baseline; */
+            /* padding-top: ; */
+        }
+
+        section {
+            /* background-color: rgb(116, 129, 124); */
+            width: 960px;
+            padding: 0 15px;
+            /* color: aliceblue; */
+            /* border: 2px solid; */
+            margin-top: 20px;
+
+        }
+
+        input {
+            width: 85.2%;
+            height: 45px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin: 10px 0 25px 0;
+            padding: 0 15px;
+            color: white;
+            border: none;
+            outline: none;
+            background-color: rgb(29, 29, 38);
+            ;
+        }
+
+        input::placeholder {
+            color: rgb(100, 102, 103);
+        }
+
+        #add-btn {
+            padding: 5px 12px;
+            font-size: 25px;
+            font-weight: 600;
+            border-radius: 10px;
+            margin-left: 10px;
+            color: white;
+            letter-spacing: 1px;
+            border: 2px solid black;
+            background-color: blueviolet;
+        }
+
+        #add-btn:hover {
+            background-color: rgb(92, 10, 168);
+            color: rgb(231, 231, 231);
+        }
+
+        .tscl {
+            display: flex;
+            justify-content: space-between;
+            max-width: 939px;
+            /* border: 2px solid ; */
+            margin-top: 12px;
+            /* margin-top: 5px; */
+            height: 40px;
+        }
+
+        .tscl button {
+            height: 43px;
+            padding: 0px 12px;
+            font-size: 25px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-left: 10px;
+            color: rgb(242, 242, 242);
+            letter-spacing: 1px;
+            /* margin-bottom: -10px; */
+            background-color: rgb(0, 136, 255);
+        }
+
+        .tscl button:hover {
+            background-color: rgb(3, 95, 175);
+            color: rgb(233, 232, 232);
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            color: rgb(224, 224, 224);
+            /* text-align: center; */
+            /* border: 2px solid red; */
+            /* align-items: center; */
+        }
+
+        .deletetask {
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            padding: 10px 2px 10px 20px;
+            letter-spacing: 1px;
+            color: rgb(245, 9, 9);
+        }
+
+        .deletetask:hover {
+            color: rgb(171, 9, 9);
+        }
+
+        .todo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+            max-width: 908px;
+            border-radius: 10px;
+            padding: 0 15px;
+            margin: 20px 0;
+            height: fit-content;
+            background-color: rgb(15, 15, 47);
+        }
+
+        @media only screen and (max-width:996px) {
+            /* body {
+                background-color: beige;
+            } */
+
+            input {
+                width: 85%;
+            }
+
+            #add-btn {
+                width: 10%;
+            }
+
+            section {
+                min-width: 300px;
+                width: 960px;
+            }
+
+ 
+        }
+
+        @media only screen and (max-width:834px) {
+            /* body {
+                background-color: rgb(237, 237, 28);
+            } */
+
+            input {
+                width: 83%;
+                height: 40px;
+            }
+
+            #add-btn {
+                width: 10%;
+                font-size: 20px;
+                padding: 0;
+                height: 40px;
+            }
+
+            .tscl button {
+                height: 39px;
+                font-size: 20px;
+            }
+            .todo{
+                height: 40px;
+            }
+        }
+
+        @media only screen and (max-width:604px) {
+            /* body {
+                background-color: rgb(167, 221, 187);
+            } */
+            h1 {
+            color: rgb(139, 177, 201);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12.5vw;
+        }
+        .todo{
+                height: 36px;
+            }
+            .todo p{
+                font-size: 15px;
+                
+            }
+            .todo button{
+                font-size: 15px;
+            }
+        h3 {
+            font-size: 6vw;
+        }
+
+            input {
+                width: 74%;
+                height: 36px;
+                font-size: 15px;
+
+            }
+
+            #add-btn {
+                width: 15%;
+                font-size: 4vw;
+                padding: 0;
+                height: 36px;
+                /* width: 60px; */
+            }
+            .tscl{
+                /* border: 2px solid; */
+                align-items: center;
+            }
+            .tscl button {
+                height: 36px;
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width:400px){
+            h1{
+                font-size: 12.4vw;
+            }
+            input{
+                width: 72%;
+            }
+            #add-btn{
+                width: 15%;
+            }
+            .tscl h3{
+                font-size: 26px;
+            }
+            .tscl button{
+                font-size: 15px;
+                padding: 0 7px;
+            }
+            .tscl{
+            align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>To Do List 2023</h1>
+        <span> <input id="data" type="text" placeholder="What do you have planned?"><button
+                id="add-btn">Add</button></span>
+        <span class="tscl">
+            <h3>Tasks</h3><button id="clear">Clear All</button>
+        </span>
+        <div class="showlist">
+
+        </div>
+    </section>
+    <script>
+        let addbtn = document.getElementById("add-btn")
+        let data = document.getElementById("data")
+
+
+        addbtn.addEventListener("click", () => {
+           if (data.value == "") {
+            alert("Please write something")
+           } else {
+            let list = JSON.parse(localStorage.getItem('list'))
+            if (list === null) {
+                tasklist = []
+            } else {
+                tasklist = list;
+            }
+            tasklist.push(data.value)
+            localStorage.setItem('list', JSON.stringify(tasklist))
+            showdata();
+           }
+        })
+        function showdata() {
+            let output = " "
+            let showlist = document.querySelector('.showlist')
+            let list = JSON.parse(localStorage.getItem('list'))
+            if (list === null) {
+                tasklist = []
+            } else {
+                tasklist = list;
+            }
+            tasklist.forEach((data, index) => {
+                output += `
+                <div class="todo">
+            <p>${data}</p>
+            <button class="deletetask" onclick="deleteitem(${index})">Delete</button>
+        </div>`
+            });
+            // console.log(showlist)
+            showlist.innerHTML = output;
+        }
+        // console.log(localStorage.getItem('list'))
+        // var arr = ["one", "two","three","four","five"];
+        // arr.splice(3,1) 
+        // console.log(localStorage.getItem("list",))
+        // console.log(JSON.parse(localStorage.getItem("list").length))
+        showdata();
+
+
+        function deleteitem(index) {
+            console.log(index)
+            let list = JSON.parse(localStorage.getItem('list'))
+            tasklist.splice(index, 1)
+            localStorage.setItem("list", JSON.stringify(tasklist))
+            showdata()
+
+        }
+        let clearbtn = document.getElementById("clear")
+        clearbtn.addEventListener("click", () => {
+            let list = JSON.parse(localStorage.getItem("list"))
+            tasklist = []
+            localStorage.setItem("list", JSON.stringify(tasklist))
+            showdata()
+            console.log("yes")
+        })
+    </script>
+
+</body>
+
+</html>
